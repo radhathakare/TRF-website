@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* * {
+    background-color: #07090F;
+} */
+
+.homepageMainDivRow {
+    background-color: #07090F;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    
+}
+
+.homepageMainDivRow2{
+    background-color: #07090F;
+}
+ 
+.homePage {
+    
+    z-index: 4;
+    margin: 0px;
+    padding-bottom: 12vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: -100%;  
+    overflow: hidden; 
+    animation: anim3 1s forwards 2s;
+    
+}
+@keyframes anim3{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+.trfLogoImgHomePage {
+    margin: 12vw 0px 0px 0px;
+    width: 34vw;
+    position: relative;
+    left: -100%;
+    animation: anim3 1.5s forwards 3s;
+}
+
+.trfHeadingHomePage {
+    margin: 0px; 
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4vw;
+    text-align: center;
+    letter-spacing: 0.04em; 
+    color: #E5E5E5;
+    animation: anim3 1.5s forwards 3s;
+}
+
+.taglineHomePage {
+    margin: 0px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.6vw;
+
+    text-align: center;
+    position: relative;
+        left: -100%;
+
+    background: linear-gradient(#C0FEFC, #3EDBF0);
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    animation: anim3 1.5s forwards 3s;
+}
+
+.aboutUsParaDiv {    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: justify;
+    margin: 60px 30px;
+    padding: 40px;
+}
+
+
+@media screen and (max-width:800px){
+    .about1{
+        width: 95vw;
+        padding: 20px 60px;
+        margin: 0px;
+    }
+}
+
+.aboutUsHeading {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.2rem;
+
+    background: linear-gradient(90deg, #3EDBF0 3.93%, #C0FEFC 99.57%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+}
+
+.aboutUsPara {
+    margin: 0.1vw 0px 0px 0px;
+    padding: 0px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.2rem;
+
+    line-height: 1.4em;
+
+    color: #E5E5E5;
+}
+
+.aboutUsViewOurProjects {
+    margin: 1.2vw 0px 0px 0px;
+    padding: 0.5em 0.8em;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.1vw;
+    text-align: center;
+    color: #07090F;
+    background: linear-gradient(89.85deg, rgba(62, 219, 240, 0.9) 2.49%, rgba(192, 254, 252, 0.9) 90.33%);
+    border-radius: 0.5em;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.aboutUsViewOurProjects:hover {
+    border: 0.08em solid #C0FEFC;
+    background: #07090F;
+    color: #E5E5E5;
+    text-decoration: none;
+}
+
+
+.aboutUsImgDiv {
+    margin: 0px 0px 5em 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutUsImg {
+    width: 38vw;
+    /* height: 38em; */
+}

@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:wght@900&display=swap");
+
+.main-timeline {
+  position: relative;
+}
+.main-timeline:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main-timeline .timeline {
+  width: 86%;
+  padding: 45px 70px 70px 100px;
+  margin: 0 0 20px 20px;
+  float: right;
+}
+ 
+  
+@media screen and (min-width:1000px){
+    .main-timeline .timeline{
+        width: 53%; 
+    }
+}
+
+.main-timeline .timeline-content {
+  color: #e5e5e5;
+  font-family: Montserrat;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+.main-timeline .timeline-icon {
+  color: #ff4ba6;
+  background-color: #fff;
+  font-size: 50px;
+  text-align: center;
+  line-height: 110px;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 2px solid #e7e7e7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.5),
+    0 0 0 10px #ff4ba6;
+  position: absolute;
+  left: -200px;
+  top: -25px;
+  z-index: 2;
+}
+.main-timeline .title {
+  color: #fff;
+  background-color: #ff4ba6;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 25px;
+  margin: 0 0 5px;
+  border-radius: 10px;
+  position: relative;
+}
+.main-timeline .title:before,
+.main-timeline .title:after {
+  content: "";
+  background-color: #fff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(-50%);
+  position: absolute;
+  left: -9px;
+  top: 50%;
+}
+.main-timeline .title:after {
+  background-color: transparent;
+  height: 3px;
+  width: 55px;
+  border-top: 9px dotted #ff4ba6;
+  box-shadow: none;
+  border-radius: 0;
+  left: -68px;
+}
+.main-timeline .description {
+  font-family: Montserrat;
+  font-style: normal; 
+  font-size: 20px;  
+  margin: 0 0 0 10px; 
+  padding: 30px 30px;
+  background: rgba(39, 51, 91,0.4);
+  border-radius: 5px;
+  box-shadow: 6px 5px 22px rgba(0, 0, 0,1);
+}
+.timeline-year {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900; 
+  font-size: 65%;  
+}
+.main-timeline .timeline:nth-child(even) {
+  float: left;
+  padding: 35px 100px 0 70px;
+  margin: 0 20px 100px 0; 
+}
+.main-timeline .timeline:nth-child(even) .timeline-icon {
+  left: auto;
+  right: -204px;
+}
+.main-timeline .timeline:nth-child(even) .title:before {
+  left: auto;
+  right: -9px;
+}
+.main-timeline .timeline:nth-child(even) .title:after {
+  left: auto;
+  right: -68px;
+}
+.main-timeline .timeline:nth-child(4n + 2) .timeline-icon {
+  color: #00a79d;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.5),
+    0 0 0 10px #00a79d;
+}
+.main-timeline .timeline:nth-child(4n + 2) .title {
+  background-color: #00a79d;
+}
+.main-timeline .timeline:nth-child(4n + 2) .title:after {
+  border-color: #00a79d;
+}
+.main-timeline .timeline:nth-child(4n + 3) .timeline-icon {
+  color: #00c2ff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.5),
+    0 0 0 10px #00c2ff;
+}
+.main-timeline .timeline:nth-child(4n + 3) .title {
+  background-color: #00c2ff;
+}
+.main-timeline .timeline:nth-child(4n + 3) .title:after {
+  border-color: #00c2ff;
+}
+.main-timeline .timeline:nth-child(4n + 4) .timeline-icon {
+  color: #ba52ff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.5),
+    0 0 0 10px #ba52ff;
+}
+.main-timeline .timeline:nth-child(4n + 4) .title {
+  background-color: #ba52ff;
+}
+.main-timeline .timeline:nth-child(4n + 4) .title:after {
+  border-color: #ba52ff;
+}
+@media screen and (max-width: 767px) {
+  .main-timeline .timeline,
+  .main-timeline .timeline:nth-child(even) {
+    width: 100%;
+    padding: 15px 0 0 10px;
+    margin: 0 0 60px 0px;
+  }
+  .main-timeline .timeline-icon,
+  .main-timeline .timeline:nth-child(even) .timeline-icon {
+    font-size: 36px;
+    line-height: 69px;
+    height: 80px;
+    width: 80px;
+    left: 0;
+    top: -6px;
+  }
+  .main-timeline .title {
+    padding-left: 100px;
+  }
+  .main-timeline .description {
+    margin-left: 50px;
+    font-size: 16.5px;
+  }
+  .main-timeline .title:before,
+  .main-timeline .title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-timeline .title {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .timeline-year {
+    font-size: medium;
+    text-align: center;
+    margin-left: 1%;
+  }
+  .timeline-content {
+    font-size: small;
+  }
+}
+
+
+.timeline-icon:hover + .timeline {
+  display: none;
+}
+
+.aBox {
+  background: #07090F;
+  position: relative;
+  padding: 75px 0px;
+}

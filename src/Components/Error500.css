@@ -1,0 +1,22 @@
+.error500Maindiv {
+    background-color: #07090F;
+
+    height: 100vh;
+    margin: 0px;
+    padding: 3.5vw 0px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.oops500ErrorBkgrnd {
+    height: 48vw;
+    position: fixed;
+}
+
+.oops500Error {
+    background: none;
+    margin: 10vw 0px;
+    position: absolute;
+    height: 28vw;
+}

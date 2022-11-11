@@ -1,0 +1,154 @@
+.bgCircles  {   
+    position: fixed ; 
+    border-radius: 50%;
+    background: rgba(0, 5, 23, 0.75);
+    background: transparent;
+    box-shadow: inset 0px 0px 25px 5px #000000; 
+}
+.tl .bgCircles1{
+    left: -115px;
+    top: -115px;
+    height: 200px;
+    width: 200px; 
+}
+
+.tl .bgCircles2{
+    left: -165px;
+    top: -165px;
+    height: 300px;
+    width: 300px; 
+ }
+ 
+.tl .bgCircles3{
+    left: -215px;
+    top: -215px;
+    height: 400px;
+    width: 400px; 
+ }
+ 
+.tl .bgCircles4{
+    left: -265px;
+    top: -265px;
+    height: 500px;
+    width: 500px; 
+ }
+ 
+.tl .bgCircles5{
+    left: -315px;
+    top: -315px;
+    height: 600px;
+    width: 600px; 
+ }
+
+ 
+.tr .tr1{
+    right: 350px;
+    top: -100px;
+    height: 200px;
+    width: 200px; 
+}
+
+.tr .tr2{
+    right: 300px;
+    top: -150px;
+    height: 300px;
+    width: 300px; 
+}
+.tr .tr3{
+    right: 250px;
+    top: -200px;
+    height: 400px;
+    width: 400px; 
+}
+
+.tr .tr4{
+    right: 200px;
+    top: -250px;
+    height: 500px;
+    width: 500px; 
+}
+
+/* .tr .tr5{
+    right: 150px;
+    top: -300px;
+    height: 600px;
+    width: 600px; 
+} */
+ 
+
+.bl .bl1{
+    bottom: -260px;
+    left: 400px;
+    height: 350px;
+    width: 350px; 
+}
+
+.bl .bl2{
+    bottom: -310px;
+    left: 350px;
+    height: 450px;
+    width: 450px; 
+}
+
+
+
+.br .br1{
+    right: -120px;
+    bottom: -120px;
+    height: 200px;
+    width: 200px; 
+}
+
+.br .br2{
+    right: -170px;
+    bottom: -170px;
+    height: 300px;
+    width: 300px; 
+}
+.br .br3{
+    right: -220px;
+    bottom: -220px;
+    height: 400px;
+    width: 400px; 
+}
+
+.br .br4{
+    right: -270px;
+    bottom: -270px;
+    height: 500px;
+    width: 500px; 
+}
+
+.br .br5{
+    right: -320px;
+    bottom: -320px;
+    height: 600px;
+    width:  600px; 
+}
+ 
+@media screen and (max-width:975px){
+    .tr{
+        display: none; 
+    }
+    .bl{
+        display: none;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-track{
+    background: #07090F; 
+}
+ 
+::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.161);
+    border-radius: 50px;
+}
+
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(255, 255, 255, 0.31);
+}

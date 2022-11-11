@@ -1,0 +1,159 @@
+ .faculty{ 
+     background: #07090F; 
+
+     padding: 100px ;
+ }
+
+
+ .faculty h2{ 
+     text-align: center;
+     font-size: 42px;
+     margin-bottom: 50px;
+     font-family: Montserrat;
+     font-weight: 600; 
+     letter-spacing: 1.25px;  
+ }
+
+ .faculty h2 span{ 
+     z-index: 5;
+     position: relative;
+     background: linear-gradient(90deg, #3EDBF0 3.93%, #C0FEFC 99.57%);
+     -webkit-text-fill-color: transparent;
+     background-clip: text; 
+ }
+ 
+.faculty h2 span::after{
+    content: ''; 
+    display: block;
+    height: 3px; 
+    width: 50%;
+    
+    margin: 10px auto;
+}
+
+
+ .sirDiv{ 
+     position: relative;  
+     height: 480px ;
+     background: rgba(229, 229, 229, 0.05); 
+ }
+ 
+
+ .sirDiv .profileImg{ 
+     height: 400px;
+     width: 360px;
+     border-radius: 20px;
+     background: #07090F; 
+     position: absolute;
+     left: 10%;
+     top: 10%;
+ }
+
+ 
+ .sirDiv .profileImg img{
+     height: 75%;
+     width: 100%;
+     border-radius: 20px 20px 0px 0px;
+ }
+
+.sirDiv .profileName{ 
+    text-align: center;
+    color: white;
+    font-family: Montserrat;
+    font-style: italic;
+    padding: 22px 0px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.sirDiv .profileName b{
+    font-size: 20px;
+}
+
+.sirDiv .profileName p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.53);
+} 
+
+.sirDiv .profileInfo{
+    position: absolute; 
+    width: calc(100% - 630px);
+    left: 510px; 
+    top: 100px;
+    padding: 20px ;
+    color: white;
+    font-family: Montserrat;
+    font-style: italic; 
+    font-size: 21px;
+    text-align: justify;
+}
+
+
+ 
+
+@media screen and (max-width:1300px){
+
+    .sirDiv{
+        height: 750px;
+    }
+
+    .sirDiv .profileImg{
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,0%);
+    }
+
+    .sirDiv .profileInfo{
+        top: 500px; 
+        width: 80%;
+        left: 10%;
+        font-size: 16px;
+        text-align: center; 
+        padding: 30px 15px;
+    }
+}
+ 
+
+@media screen and (max-width:700px){
+    .sirDiv .profileImg{
+        height: 300px;
+        width: 75%;
+    }
+
+    .sirDiv .profileName{
+        padding: 12px 0px ;
+    }
+
+    .sirDiv .profileInfo{
+        top: 400px;
+    }
+}
+
+
+@media screen and (max-width:550px){
+    .faculty{
+        padding: 3px;
+    }
+
+    .faculty h2{
+        font-size: 27px;
+        margin : 25px 0px;
+    }
+
+    .sirDiv{
+        height: 710px;
+    }
+
+    .sirDiv .profileInfo{
+        width: 90%;
+        left: 5%;
+        font-size: 15px;
+        text-align: center; 
+    }
+}
+
+
+@media screen and (max-width:300px){ 
+    .sirDiv .profileInfo{ 
+        font-size: 13px; 
+    }
+}

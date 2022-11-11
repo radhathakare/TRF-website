@@ -1,0 +1,218 @@
+.aluminiBox table {
+  width: 80%;
+  z-index: 5;
+  margin: 0px auto;
+  margin-bottom: 100px;
+  background: #07090F;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 66px 66px 0px 0px;
+  align-items: center;
+}
+
+.aluminiBox table tr {
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.35);
+  background: rgba(77, 97, 167, 0.1);
+  color: #fff;
+  padding: 0.35em;
+  z-index: 5;
+  font-size: 21px;
+  z-index: 5;
+  position: relative;
+}
+
+.aluminiBox table th,
+.aluminiBox table td {
+  padding: 0.625em;
+  text-align: center;
+  z-index: 5;
+}
+ 
+.aluminiBox table th {
+  font-size: 30px;
+  z-index: 5;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 1);
+}
+
+.iconsAlumni {
+  color: #e5e5e5;
+  margin: 5px;
+  font-size: 32px;
+  z-index: 5;
+  transition: all linear 0.3s;
+}
+
+.headAlumni {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: aqua;
+  z-index: 5;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.headAlumni h1 {
+  margin-top: 100px;
+  font-size: 38px;
+  /* font-weight: bold; */
+  font-family: 'Montserrat';
+}
+
+.aluminiBox {
+  background: #07090F;
+  padding: 70px 0px 110px 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .aluminiBox table {
+    width: 60%;
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .aluminiBox table {
+    width: 94%;
+  }
+
+  .aluminiBox {
+    padding-top: 40px;
+  }
+
+  .aluminiBox .headAlumni {
+    margin: 0px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .headAlumni h1 {
+    font-size: 24px;
+    margin: 88px 0px;
+  }
+ 
+}
+
+@media screen and (max-width: 1200px) {
+  .aluminiBox table .p {
+    position: relative;
+    left: 0%;
+  }
+
+  .aluminiBox table caption {
+    font-size: 20px;
+  }
+
+  .aluminiBox table thead {
+    display: none;
+  }
+
+  .aluminiBox table tr {
+    display: block;
+    margin-bottom: 1.625em;
+  }
+
+  .aluminiBox table td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.432);
+    display: block;
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .aluminiBox table .test {
+    border: 1px solid white;
+    border-radius: 0px 0px 25px 25px;
+    padding-bottom: 14px;
+    background: aqua;
+  }
+
+  .aluminiBox table .test .iconsAlumni {
+    color: #07090F;
+  }
+}
+
+.sBox {
+  position: absolute;
+  z-index: 9;
+  background: #07090F;
+  box-shadow: -5px 0px 25px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  width: 280px;
+  right: 30px;
+}
+
+.sBox .name {
+  width: 90%;
+  height: 50px; 
+  display: block;
+  margin: 0px auto;
+  background: linear-gradient(90deg, #3edbf0 0%, #c0fefc 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 55px;
+  font-size: 19px; 
+  border: none;
+  outline: none;
+  padding-left: 24px;  
+}
+
+.sBox .domain{ 
+  width: 90%;
+  display: block;
+  margin: 30px auto;
+  padding: 15px 32px;
+  font-size: 20px;
+  color: white;
+  background: rgba(229, 229, 229, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+ 
+
+.sBox .domain .plus{ 
+  font-size: 33px;  
+  cursor: pointer;  
+  float: right;
+}
+
+.sBox .doptn{  
+  margin: 30px 0px 20px 0px;
+  color: white; 
+}
+
+
+.sBox .domain .doptn label{
+  font-size: 16px;
+  font-weight: normal;
+  color: #7b7b7b;
+}
+
+.sBox .domain .doptn input{
+  float: right;
+}
+
+@media screen and (max-width:400px){
+  .sBox{
+    width: 80%;
+  }
+}
+
+.sBox .s{  
+  margin-right:  14px  ; 
+  color: white;
+  font-size: 34px; 
+  float: right;
+  padding-bottom: 14px; 
+}
+
+.true{
+  display: block;
+}
+
+.false{
+  display: none;
+}

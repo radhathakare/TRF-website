@@ -1,0 +1,243 @@
+.loading {
+  display: flex;
+  background: #07090F;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  min-height: 100vh;
+}
+
+.Team_Rel {
+  background: #07090F;
+  min-height: 100vh;
+}
+
+.cbox {
+  position: relative;
+}
+/* 
+section::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#f00,#f0f);
+  clip-path: circle(30% at right 70%);
+} */
+/* 
+section::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#2196f3,#e91e63);
+  clip-path: circle(20% at 10% 10%);
+} */
+
+.containerTeam {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.containerTeam .domainTeam {
+  height: 100px;
+  width: 96%;
+  overflow: hidden;
+  text-align: center;
+  background: linear-gradient(90deg, #3EDBF0 3.93%, #C0FEFC 99.57%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 40px;
+  letter-spacing: 1.25px;
+  padding: 40px 0px 0px 0px;
+  text-transform: uppercase;
+}
+
+.containerTeam .cardTeam {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+@media screen and (max-width: 500px) {
+  .containerTeam .domainTeam {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .containerTeam .cardTeam {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+.containerTeam .cardTeam .contentTeam {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.containerTeam .cardTeam:hover .contentTeam {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.containerTeam .cardTeam .contentTeam .imgBxTeam {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.containerTeam .cardTeam .contentTeam .imgBxTeam img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.containerTeam .cardTeam .contentTeam .contentBxTeam h3 {
+  color: whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.1em;
+  margin: 25px 0px 20px 0px;
+}
+
+.containerTeam .cardTeam .contentTeam .contentBxTeam h3 span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+}
+
+.containerTeam .cardTeam .sciTeam {
+  position: absolute;
+  bottom: 46px;
+  display: flex;
+  margin: 0px;
+  padding: 4px;
+}
+
+.containerTeam .cardTeam .sciTeam li {
+  list-style: none;
+  margin: 0px 10px;
+  font-size: 28px;
+  transform: translateY(45px);
+  opacity: 0;
+  transition: 0.5s linear;
+  transition-delay: calc(0.1s * var(--i));
+}
+
+.containerTeam .cardTeam .sciTeam li a {
+  color: rgb(0, 102, 255);
+}
+
+.containerTeam .cardTeam:hover .sciTeam li {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.filterListTeam {
+  list-style: none;
+}
+
+.filterBtnTeam,
+.filterListTeam { 
+  border-radius: 4px;
+  box-shadow: 10px 10px 25px 5px #000000;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  top: 70px;
+  right: 9px;
+  z-index: 4;
+}
+
+.filterBtnTeam button {
+  height: 100%;
+  width: 100%;
+  font-size: 22px;
+  background: #000000;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.filterListTeam { 
+  background: #07090F;
+  height: 250px;
+  width: 300px;
+  position: fixed;
+  top: 94px;
+  right: 9px;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px;
+  border-radius: 13px;
+  font-family: Montserrat;
+  font-weight: 200;
+  font-size: 20px;  
+}
+
+.filterListTeam li { 
+  border-bottom: 1px solid rgb(49, 53, 68);
+  border-radius: 50px;
+  width: 95%;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.filterListTeam li a:hover , .filterListTeam li a:focus , .filterListTeam li a:active{
+  color: aqua;
+  transition: all linear 0.3s;
+}
+
+.filterListTeam li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255,0.3);
+}
+
+.hide {
+  display: none;
+}
+
+.display {
+  display: "";
+}
+
+@media screen and (max-width: 330px) {
+  .filterListTeam {
+    width: 80%;
+  }
+}
